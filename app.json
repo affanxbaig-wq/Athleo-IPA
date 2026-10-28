@@ -1,4 +1,9 @@
 {
   "name": "Athleo",
-  "displayName": "Athleo"
+  "displayName": "Athleo",
+  "extra": {
+    "eas": {
+      "projectId": "b3587283-9f45-41c1-82d3-b642764236e1"
+    }
+  }
 }
