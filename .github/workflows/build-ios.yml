@@ -1,12 +1,15 @@
-name: Build iOS IPA (Unsigned for Sideloadly)
+name: Build & Release iOS IPA (Sideloadly)
 
 on:
   workflow_dispatch:
   push:
     branches: [ main, master ]
 
+permissions:
+  contents: write
+
 jobs:
-  build-ios:
+  build-and-release:
     runs-on: macos-14
     steps:
       - name: Checkout repository
@@ -57,3 +60,18 @@ jobs:
           name: Athleo-iOS-IPA
           path: Athleo.ipa
           retention-days: 14
+
+      - name: Create GitHub Release with IPA
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: v1.0.0-b${{ github.run_number }}
+          name: "Athleo iOS v1.0.0 (Release Build #${{ github.run_number }})"
+          body: |
+            ### 🚀 Athleo iOS Release for Sideloadly
+            - **Build**: #${{ github.run_number }}
+            - **File**: `Athleo.ipa`
+            - **Installation**: Download `Athleo.ipa` below and open with **Sideloadly** on your PC.
+            - **Changes**: New 3D generated visual assets, cyber runner hero banner, biometric passkey integration, and enhanced dark UI.
+          files: Athleo.ipa
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
