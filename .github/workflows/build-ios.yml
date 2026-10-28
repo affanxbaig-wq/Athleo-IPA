@@ -10,10 +10,19 @@ permissions:
 
 jobs:
   build-and-release:
-    runs-on: macos-14
+    runs-on: macos-15
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+
+      - name: Select Xcode 16
+        run: |
+          XCODE_PATH=$(find /Applications -maxdepth 1 -name "Xcode_16*.app" | sort -V | tail -n 1)
+          if [ -n "$XCODE_PATH" ]; then
+            echo "Selecting $XCODE_PATH"
+            sudo xcode-select -s "$XCODE_PATH"
+          fi
+          xcodebuild -version
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
