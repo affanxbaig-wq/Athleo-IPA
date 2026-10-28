@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#121414;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "inverse-on-surface": "#2f3131", "surface-tint": "#96da27", "surface-dim": "#121414", "surface-container-low": "#1a1c1c", "on-tertiary-fixed": "#291800", "tertiary-container": "#ffddb1", "background": "#121414", "secondary-container": "#315201", "on-primary-fixed-variant": "#324f00", "primary": "#ffffff", "on-secondary-fixed": "#102000", "on-tertiary-fixed-variant": "#624000", "on-secondary-fixed-variant": "#2f4f00", "inverse-primary": "#446900", "on-secondary-container": "#9dc56b", "outline-variant": "#424936", "secondary": "#aad378", "surface-variant": "#343535", "secondary-fixed": "#c6f091", "surface-container-high": "#292a2a", "error": "#ffb4ab", "on-surface-variant": "#c2cab0", "on-background": "#e3e2e2", "outline": "#8c947c", "surface-container-highest": "#343535", "on-primary-container": "#486f00", "error-container": "#93000a", "primary-fixed-dim": "#96da27", "tertiary-fixed-dim": "#ffba4b", "surface-container": "#1e2020", "primary-container": "#b1f746", "tertiary": "#ffffff", "on-tertiary": "#442b00", "on-secondary": "#1f3700", "on-error": "#690005", "secondary-fixed-dim": "#aad378", "primary-fixed": "#b1f746", "inverse-surface": "#e3e2e2", "tertiary-fixed": "#ffddb1", "on-error-container": "#ffdad6", "surface-bright": "#383939", "surface": "#121414", "on-primary": "#213600", "on-primary-fixed": "#111f00", "on-surface": "#e3e2e2", "surface-container-lowest": "#0d0e0f", "on-tertiary-container": "#895b00" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-lg": "1.5rem", "gutter": "1rem", "margin-desktop": "3rem", "space-md": "1rem", "space-xl": "2.5rem", "gutter-desktop": "1.5rem", "margin-tablet": "2rem", "margin": "1rem", "space-xs": "0.25rem", "space-sm": "0.5rem" }, "fontFamily": { "headline-md": ["Montserrat"], "metric-lg": ["Space Grotesk"], "body-sm": ["Montserrat"], "display-hero": ["Montserrat"], "body-md": ["Montserrat"], "headline-sm": ["Montserrat"], "body-lg": ["Montserrat"], "metric-xl": ["Space Grotesk"], "metric-xl-mobile": ["Space Grotesk"], "headline-lg-mobile": ["Montserrat"], "display-hero-mobile": ["Montserrat"], "metric-md": ["Space Grotesk"], "label-caps": ["Space Grotesk"], "headline-lg": ["Montserrat"], "label-interactive": ["Space Grotesk"] }, "fontSize": { "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "metric-lg": ["28px", { "lineHeight": "32px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "400" }], "display-hero": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "800" }], "body-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "500" }], "metric-xl": ["48px", { "lineHeight": "52px", "letterSpacing": "-0.04em", "fontWeight": "700" }], "metric-xl-mobile": ["36px", { "lineHeight": "40px", "letterSpacing": "-0.03em", "fontWeight": "700" }], "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "display-hero-mobile": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "metric-md": ["20px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-caps": ["11px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "700" }], "headline-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-interactive": ["14px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "600" }] } } } }</script></head><body class="bg-surface text-on-surface antialiased min-h-screen flex flex-col"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.3)]"><div class="h-16 px-gutter flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0 flex-1"><h1 class="text-headline-sm font-headline-sm text-primary tracking-tight truncate uppercase">Health Recovery</h1></div><div class="flex items-center gap-space-sm flex-shrink-0"><button aria-label="Notifications" class="w-11 h-11 flex items-center justify-center rounded-xl bg-surface-container-low text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[20px]">notifications</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 w-full bg-surface pt-16 pb-20"><div class="flex flex-col w-full px-gutter pb-space-xl space-y-space-md">
+<!-- Interactive Segmented Control Tabs -->
+<div class="w-full bg-surface-container-low p-1 rounded-full flex items-center justify-between shadow-inner">
+<button class="flex-1 py-2 px-3 rounded-full text-center text-label-caps font-label-caps transition-all duration-300 bg-primary-container text-on-primary-container font-semibold shadow-md flex items-center justify-center gap-1.5" id="tab-sleep" onclick="switchView('sleep')">
+<span class="material-symbols-outlined text-[16px]">bedtime</span>
+      SLEEP SCORE
+    </button>
+<button class="flex-1 py-2 px-3 rounded-full text-center text-label-caps font-label-caps transition-all duration-300 text-on-surface-variant hover:text-on-surface flex items-center justify-center gap-1.5" id="tab-readiness" onclick="switchView('readiness')">
+<span class="material-symbols-outlined text-[16px]">vital_signs</span>
+      READINESS &amp; HRV
+    </button>
+</div>
+<!-- VIEW 1: Sleep Telemetry View -->
+<div class="flex flex-col w-full space-y-space-md" id="view-sleep-container">
+<!-- Sleep Score Circular Progress Card -->
+<div class="w-full bg-surface-container rounded-2xl p-space-lg shadow-xl relative overflow-hidden flex flex-col items-center">
+<!-- Glow ambient spot -->
+<div class="absolute -top-16 left-1/2 -translate-x-1/2 w-48 h-48 bg-primary-container/10 rounded-full blur-3xl pointer-events-none"></div>
+<!-- Top Subhead & Timestamp -->
+<div class="w-full flex items-center justify-between mb-space-sm text-on-surface-variant">
+<span class="text-label-caps font-label-caps tracking-widest text-secondary flex items-center gap-1">
+<span class="inline-block w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+          REST TELEMETRY
+        </span>
+<span class="text-body-sm font-body-sm text-on-surface-variant">Last Night • Auto-Synced</span>
+</div>
+<!-- Circular Metric Ring -->
+<div class="relative w-52 h-52 flex items-center justify-center my-2">
+<svg class="w-full h-full transform -rotate-90" viewbox="0 0 160 160">
+<circle class="text-surface-container-highest opacity-40" cx="80" cy="80" fill="transparent" r="68" stroke="currentColor" stroke-width="10"></circle>
+<circle class="text-primary-container transition-all duration-1000 ease-out" cx="80" cy="80" fill="transparent" r="68" stroke="currentColor" stroke-dasharray="427" stroke-dashoffset="55" stroke-linecap="round" stroke-width="10" style="filter: drop-shadow(0 0 10px rgba(177, 247, 70, 0.45));"></circle>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center text-center">
+<span class="text-metric-xl font-metric-xl text-primary leading-none tracking-tighter">87</span>
+<span class="text-label-caps font-label-caps text-on-surface-variant mt-0.5 tracking-wider">SLEEP INDEX</span>
+<div class="mt-2 px-2.5 py-0.5 rounded-full bg-primary-container/15 text-primary-container text-label-caps font-label-caps tracking-wide">
+            EXCELLENT
+          </div>
+</div>
+</div>
+<!-- Quick Metrics Readout -->
+<div class="w-full grid grid-cols-3 gap-2 py-space-sm text-center bg-surface-container-low rounded-xl mt-2">
+<div class="flex flex-col py-1">
+<span class="text-label-caps font-label-caps text-on-surface-variant">TOTAL SLEEP</span>
+<span class="text-metric-md font-metric-md text-primary mt-0.5">7h 48m</span>
+</div>
+<div class="flex flex-col py-1 border-x border-surface-container-high/40">
+<span class="text-label-caps font-label-caps text-on-surface-variant">IN BED</span>
+<span class="text-metric-md font-metric-md text-primary mt-0.5">8h 22m</span>
+</div>
+<div class="flex flex-col py-1">
+<span class="text-label-caps font-label-caps text-on-surface-variant">EFFICIENCY</span>
+<span class="text-metric-md font-metric-md text-primary-container mt-0.5">93%</span>
+</div>
+</div>
+<!-- Sleep Stage Breakdown Section -->
+<div class="w-full mt-space-md pt-space-sm">
+<div class="flex items-center justify-between mb-2">
+<span class="text-label-caps font-label-caps text-on-surface">SLEEP ARCHITECTURE</span>
+<span class="text-body-sm font-body-sm text-primary-container font-medium">Optimal REM Spike</span>
+</div>
+<!-- Segmented Stacked Progress Bar -->
+<div class="w-full h-3 bg-surface-container-highest rounded-full overflow-hidden flex gap-0.5 p-0.5">
+<div class="h-full bg-secondary rounded-l-full transition-all duration-700" style="width: 22%;" title="Deep 22%"></div>
+<div class="h-full bg-surface-bright transition-all duration-700" style="width: 55%;" title="Light 55%"></div>
+<div class="h-full bg-primary-container transition-all duration-700" style="width: 23%;" title="REM 23%"></div>
+<div class="h-full bg-error rounded-r-full transition-all duration-700" style="width: 7%;" title="Awake 34m"></div>
+</div>
+<!-- Legend and Durations -->
+<div class="grid grid-cols-2 gap-y-2.5 gap-x-4 mt-space-md">
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low/60">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="text-body-sm font-body-sm text-on-surface">Deep Sleep</span>
+</div>
+<span class="text-body-sm font-metric-md text-primary font-medium">1h 45m <span class="text-on-surface-variant text-[11px]">(22%)</span></span>
+</div>
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low/60">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-surface-bright"></span>
+<span class="text-body-sm font-body-sm text-on-surface">Light Sleep</span>
+</div>
+<span class="text-body-sm font-metric-md text-primary font-medium">4h 18m <span class="text-on-surface-variant text-[11px]">(55%)</span></span>
+</div>
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low/60">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span>
+<span class="text-body-sm font-body-sm text-on-surface">REM Sleep</span>
+</div>
+<span class="text-body-sm font-metric-md text-primary font-medium">1h 45m <span class="text-on-surface-variant text-[11px]">(23%)</span></span>
+</div>
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low/60">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-error"></span>
+<span class="text-body-sm font-body-sm text-on-surface">Awake</span>
+</div>
+<span class="text-body-sm font-metric-md text-on-surface-variant font-medium">34m</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Daily Readiness & Autonomic Nervous System Card -->
+<div class="w-full bg-surface-container rounded-2xl p-space-lg shadow-xl relative overflow-hidden">
+<div class="flex items-center justify-between mb-2">
+<div>
+<span class="text-label-caps font-label-caps text-secondary tracking-widest block">AUTONOMIC SYSTEM</span>
+<h2 class="text-headline-sm font-headline-sm text-primary tracking-tight mt-0.5">HIGH READINESS <span class="text-primary-container">(92/100)</span></h2>
+</div>
+<div class="w-10 h-10 rounded-full bg-primary-container/10 flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[24px]">electric_bolt</span>
+</div>
+</div>
+<!-- Animated Sine HRV Wave -->
+<div class="w-full h-16 my-3 relative flex items-center justify-center overflow-hidden rounded-xl bg-surface-container-lowest/80 px-2">
+<svg class="w-full h-12" preserveaspectratio="none" viewbox="0 0 320 60">
+<defs>
+<lineargradient id="hrvGlow" x1="0%" x2="100%" y1="0%" y2="0%">
+<stop offset="0%" stop-color="#96da27" stop-opacity="0.3"></stop>
+<stop offset="50%" stop-color="#b1f746" stop-opacity="1"></stop>
+<stop offset="100%" stop-color="#96da27" stop-opacity="0.3"></stop>
+</lineargradient>
+</defs>
+<path d="M0,30 Q20,5 40,30 T80,30 T120,30 Q130,5 140,55 Q150,10 160,30 T200,30 T240,30 Q250,8 260,52 Q270,12 280,30 T320,30" fill="none" stroke="url(#hrvGlow)" stroke-linecap="round" stroke-width="2.5">
+<animate attributename="d" dur="3.5s" repeatcount="indefinite" values="
+            M0,30 Q20,5 40,30 T80,30 T120,30 Q130,5 140,55 Q150,10 160,30 T200,30 T240,30 Q250,8 260,52 Q270,12 280,30 T320,30;
+            M0,30 Q20,20 40,30 T80,30 T120,30 Q135,10 145,50 Q155,5 165,30 T200,30 T240,30 Q255,15 265,48 Q275,20 285,30 T320,30;
+            M0,30 Q20,5 40,30 T80,30 T120,30 Q130,5 140,55 Q150,10 160,30 T200,30 T240,30 Q250,8 260,52 Q270,12 280,30 T320,30
+          "></animate>
+</path>
+</svg>
+<div class="absolute right-3 top-2 px-2 py-0.5 rounded-full bg-surface-container-high/70 text-[10px] font-label-caps text-secondary-fixed">
+        PARASYMPATHETIC DOMINANT
+      </div>
+</div>
+<!-- 3 Telemetry Metrics Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm mt-space-sm">
+<!-- HRV Card -->
+<div class="p-space-sm rounded-xl bg-surface-container-low flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="text-label-caps font-label-caps">HRV VARIABILITY</span>
+<span class="material-symbols-outlined text-[18px] text-primary-container">favorite</span>
+</div>
+<div class="flex items-baseline gap-1 my-1">
+<span class="text-metric-lg font-metric-lg text-primary">68</span>
+<span class="text-body-sm font-label-caps text-on-surface-variant">ms</span>
+</div>
+<div class="flex items-center justify-between text-[11px] pt-1 border-t border-surface-container-high/40">
+<span class="text-on-surface-variant">Base 54 ms</span>
+<span class="text-primary-container font-semibold">+14 ms (Optimal)</span>
+</div>
+</div>
+<!-- Resting Heart Rate -->
+<div class="p-space-sm rounded-xl bg-surface-container-low flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="text-label-caps font-label-caps">RESTING HR</span>
+<span class="material-symbols-outlined text-[18px] text-secondary">monitor_heart</span>
+</div>
+<div class="flex items-baseline gap-1 my-1">
+<span class="text-metric-lg font-metric-lg text-primary">52</span>
+<span class="text-body-sm font-label-caps text-on-surface-variant">bpm</span>
+</div>
+<div class="flex items-center justify-between text-[11px] pt-1 border-t border-surface-container-high/40">
+<span class="text-on-surface-variant">Base 55 bpm</span>
+<span class="text-secondary font-semibold">-3 bpm (Recovered)</span>
+</div>
+</div>
+<!-- Body / Skin Temp -->
+<div class="p-space-sm rounded-xl bg-surface-container-low flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="text-label-caps font-label-caps">SKIN TEMP</span>
+<span class="material-symbols-outlined text-[18px] text-tertiary-fixed-dim">device_thermostat</span>
+</div>
+<div class="flex items-baseline gap-1 my-1">
+<span class="text-metric-lg font-metric-lg text-primary">-0.2</span>
+<span class="text-body-sm font-label-caps text-on-surface-variant">°C</span>
+</div>
+<div class="flex items-center justify-between text-[11px] pt-1 border-t border-surface-container-high/40">
+<span class="text-on-surface-variant">Baseline Dev</span>
+<span class="text-primary font-semibold">Normal State</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Acute vs Chronic Training Load (ACWR) -->
+<div class="w-full bg-surface-container rounded-2xl p-space-lg shadow-xl relative overflow-hidden">
+<div class="flex items-center justify-between mb-3">
+<div>
+<span class="text-label-caps font-label-caps text-secondary tracking-widest block">WORKLOAD EQUILIBRIUM</span>
+<h3 class="text-headline-sm font-headline-sm text-primary tracking-tight">TRAINING STRAIN RATIO</h3>
+</div>
+<div class="text-right">
+<span class="text-metric-lg font-metric-lg text-primary-container leading-none">1.15</span>
+<span class="text-[10px] font-label-caps block text-on-surface-variant">ACWR RATIO</span>
+</div>
+</div>
+<!-- Gauge Track with Indicator -->
+<div class="w-full mt-2">
+<div class="relative w-full h-3 rounded-full bg-surface-container-highest flex overflow-hidden">
+<!-- Low zone -->
+<div class="h-full bg-surface-bright" style="width: 25%;"></div>
+<!-- Sweet spot zone -->
+<div class="h-full bg-primary-container shadow-[0_0_12px_rgba(177,247,70,0.6)]" style="width: 45%;"></div>
+<!-- High strain zone -->
+<div class="h-full bg-tertiary-fixed-dim" style="width: 15%;"></div>
+<!-- Redline / Overreach -->
+<div class="h-full bg-error" style="width: 15%;"></div>
+</div>
+<!-- Ticks & Marker -->
+<div class="relative w-full mt-1.5 h-5 text-[10px] font-label-caps text-on-surface-variant flex justify-between">
+<span>0.8 (Under)</span>
+<span class="text-primary-container font-bold">1.0 - 1.3 (SWEET SPOT)</span>
+<span>1.5+ (Fatigue)</span>
+</div>
+</div>
+<div class="mt-2 p-3 rounded-xl bg-surface-container-low flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-primary-container/10 flex-shrink-0 flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[20px]">fitness_center</span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface">
+        Progressive overload threshold reached. Capacity calibrated for strength adaptations without systemic burnout.
+      </p>
+</div>
+</div>
+<!-- ATHLEO Recovery Guidance (AI Coach Athena Nudge) -->
+<div class="w-full bg-surface-container rounded-2xl p-space-lg shadow-xl relative overflow-hidden">
+<!-- Subtle accent border element on left side -->
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-primary-container"></div>
+<div class="flex items-start gap-3">
+<!-- Athena Avatar -->
+<div class="w-12 h-12 rounded-xl bg-surface-container-highest relative flex-shrink-0 overflow-hidden flex items-center justify-center shadow-md">
+<img class="w-full h-full object-cover" data-alt="Futuristic holographic athletic AI mentor avatar icon with neon lime geometric contours, sleek dark sci-fi aesthetic, hyper-minimalist graphic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOedxkBfTnwSJLseLWADI5Oi5PjxVbcfQtqEcg749vWyNSfmztYPa4EwVuWZKt_fCxVlgyE2Uuu9B_kWJ2pAZhwR-86aBw1kGQLtaOd-AAeMVqxzlr2Owz6FLHOcR0gfp1LSasi1tkhbmyZQ2PRwL19ldT7KENNujGBhWL90f7y3rQp_f0KWkQlfdHksOfV-X6SncbASB1gZ3WvBqnyPqVfBrPGRJ425Pr1b--XaOKTM1JovtcthOw"/>
+<div class="absolute bottom-0 right-0 w-3 h-3 rounded-full bg-primary-container border-2 border-surface-container"></div>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="text-label-interactive font-label-interactive text-primary">ATHENA</span>
+<span class="text-[10px] font-label-caps px-1.5 py-0.5 rounded bg-primary-container/15 text-primary-container">COACH AI</span>
+</div>
+<span class="text-[11px] font-body-sm text-on-surface-variant">Just Now</span>
+</div>
+<p class="text-body-md font-body-md text-on-surface mt-2 leading-relaxed">
+          “Prime central nervous system detected. Ideal window for high-load compound lifts <span class="text-primary font-semibold">(Bench / Deadlift PR attempt)</span>. Maintain baseline hydration at 3.5L.”
+        </p>
+<!-- Dynamic Action Chip -->
+<div class="mt-3 flex items-center gap-2">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-high hover:bg-surface-bright text-primary text-body-sm font-body-sm transition-all flex items-center gap-1.5" onclick="triggerHaptic(this)">
+<span class="material-symbols-outlined text-[16px] text-primary-container">tune</span>
+            Adjust Today's Targets
+          </button>
+<button class="px-3 py-1.5 rounded-lg bg-transparent hover:bg-surface-container-low text-on-surface-variant text-body-sm font-body-sm transition-all" onclick="triggerHaptic(this)">
+            Dismiss
+          </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Contextual Photo Vignette -->
+<div class="w-full h-32 rounded-2xl overflow-hidden relative shadow-lg">
+<div class="bg-cover bg-center w-full h-full" data-alt="Atmospheric moody recovery room with high performance compression boots, soft dark slate ambient light, neon green athlete telemetry glow, futuristic serene recovery studio environment" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAvu8eKOBRelncpKfVggDQiDvaY302uhliVKO5NQp2qpF9BdNLrcXrk0Oxl19yPNI1aK4OHOncHpbIRIqFCHia4c68u0n4g2yngUho95oW12Ahs228nBkwYOpV2beHu7uAMA-G41NwEvCKnvEvG4zrxbzBNrL2yDcGVSW_Ai8kY4eAsamw6vU3fsBklg_spGntMuPzSZ4slHhEinBlm59m9rOwirJYTLPkr6by6oP7g1rD2sKcUuSJl')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/40 to-transparent flex items-end p-4">
+<div class="flex items-center justify-between w-full">
+<div>
+<span class="text-label-caps font-label-caps text-secondary">RECOMMENDED PROTOCOL</span>
+<span class="text-body-md font-body-md text-primary font-semibold block">15m Percussive Therapy &amp; Cold Soak</span>
+</div>
+<span class="material-symbols-outlined text-primary-container text-[24px]">spa</span>
+</div>
+</div>
+</div>
+<!-- Primary & Secondary Action Buttons -->
+<div class="w-full flex flex-col space-y-space-sm pt-space-xs">
+<!-- Primary Sync Action -->
+<button class="w-full h-14 rounded-2xl bg-primary-container text-on-primary-container font-label-interactive text-label-interactive tracking-wider flex items-center justify-center gap-2 shadow-[0_0_24px_-4px_rgba(177,247,70,0.35)] active:scale-[0.98] transition-transform" id="sync-telemetry-btn" onclick="syncTelemetryData()">
+<span class="material-symbols-outlined text-[20px] transition-transform" id="sync-icon">sync</span>
+<span id="sync-label">SYNC APPLE HEALTH / WHOOP</span>
+</button>
+<!-- Secondary Manual Sleep Logging Action -->
+<button class="w-full h-12 rounded-xl bg-surface-container text-on-surface font-label-interactive text-label-interactive hover:text-primary transition-all flex items-center justify-center gap-1.5" onclick="openManualLogger()">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+      + LOG SLEEP MANUALLY
+    </button>
+</div>
+</div>
+<!-- Inline Interactive Script -->
+<script>
+  function switchView(mode) {
+    const sleepTab = document.getElementById('tab-sleep');
+    const readTab = document.getElementById('tab-readiness');
+    
+    if (mode === 'sleep') {
+      sleepTab.className = "flex-1 py-2 px-3 rounded-full text-center text-label-caps font-label-caps transition-all duration-300 bg-primary-container text-on-primary-container font-semibold shadow-md flex items-center justify-center gap-1.5";
+      readTab.className = "flex-1 py-2 px-3 rounded-full text-center text-label-caps font-label-caps transition-all duration-300 text-on-surface-variant hover:text-on-surface flex items-center justify-center gap-1.5";
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      readTab.className = "flex-1 py-2 px-3 rounded-full text-center text-label-caps font-label-caps transition-all duration-300 bg-primary-container text-on-primary-container font-semibold shadow-md flex items-center justify-center gap-1.5";
+      sleepTab.className = "flex-1 py-2 px-3 rounded-full text-center text-label-caps font-label-caps transition-all duration-300 text-on-surface-variant hover:text-on-surface flex items-center justify-center gap-1.5";
+      window.scrollTo({ top: 380, behavior: 'smooth' });
+    }
+  }
+
+  function syncTelemetryData() {
+    const icon = document.getElementById('sync-icon');
+    const label = document.getElementById('sync-label');
+    
+    icon.classList.add('animate-spin');
+    label.innerText = 'FETCHING SENSOR DATA...';
+
+    setTimeout(() => {
+      icon.classList.remove('animate-spin');
+      icon.innerText = 'check_circle';
+      label.innerText = 'HEALTH TELEMETRY UPDATED';
+      
+      setTimeout(() => {
+        icon.innerText = 'sync';
+        label.innerText = 'SYNC APPLE HEALTH / WHOOP';
+      }, 3000);
+    }, 1200);
+  }
+
+  function triggerHaptic(btn) {
+    btn.classList.add('scale-95');
+    setTimeout(() => btn.classList.remove('scale-95'), 150);
+  }
+
+  function openManualLogger() {
+    const manualBtn = event.currentTarget;
+    manualBtn.classList.add('bg-surface-container-high');
+    setTimeout(() => manualBtn.classList.remove('bg-surface-container-high'), 250);
+  }
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-1px_12px_rgba(0,0,0,0.4)]" data-active-classes="text-primary-container font-semibold"><div class="flex justify-around items-center h-16 px-space-xs"><a class="flex flex-col items-center justify-center gap-space-xs min-w-[56px] h-12 text-on-surface-variant hover:text-on-surface transition-colors" data-path="home" href="#"><span class="material-symbols-outlined text-[22px]">dashboard</span><span class="text-label-caps font-label-caps uppercase">Home</span></a><a class="flex flex-col items-center justify-center gap-space-xs min-w-[56px] h-12 text-on-surface-variant hover:text-on-surface transition-colors" data-path="workouts" href="#"><span class="material-symbols-outlined text-[22px]">fitness_center</span><span class="text-label-caps font-label-caps uppercase">Workouts</span></a><a class="flex flex-col items-center justify-center gap-space-xs min-w-[56px] h-12 text-on-surface-variant hover:text-on-surface transition-colors" data-path="activity-tracker" href="#"><span class="material-symbols-outlined text-[22px]">monitoring</span><span class="text-label-caps font-label-caps uppercase">Activity</span></a><a class="flex flex-col items-center justify-center gap-space-xs min-w-[56px] h-12 text-on-surface-variant hover:text-on-surface transition-colors" data-path="schedule-planner" href="#"><span class="material-symbols-outlined text-[22px]">calendar_today</span><span class="text-label-caps font-label-caps uppercase">Schedule</span></a><a aria-current="page" class="flex flex-col items-center justify-center gap-space-xs min-w-[56px] h-12 transition-colors text-primary-container font-semibold" data-path="health-recovery" href="#"><span class="material-symbols-outlined text-[22px]">vital_signs</span><span class="text-label-caps font-label-caps uppercase">Recovery</span></a></div></nav></body></html>

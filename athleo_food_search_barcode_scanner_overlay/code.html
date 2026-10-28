@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_blank" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "primary": "#ffffff", "primary-container": "#b1f746", "on-primary": "#213600", "surface-container-lowest": "#0d0e0f", "on-primary-fixed": "#111f00", "on-tertiary-fixed-variant": "#624000", "on-secondary-container": "#9dc56b", "on-background": "#e3e2e2", "surface-variant": "#343535", "tertiary-container": "#ffddb1", "tertiary-fixed-dim": "#ffba4b", "on-surface-variant": "#c2cab0", "background": "#121414", "on-tertiary-fixed": "#291800", "outline": "#8c947c", "outline-variant": "#424936", "tertiary-fixed": "#ffddb1", "surface-container-high": "#292a2a", "surface": "#121414", "error": "#ffb4ab", "on-primary-fixed-variant": "#324f00", "error-container": "#93000a", "primary-fixed-dim": "#96da27", "on-primary-container": "#486f00", "surface-tint": "#96da27", "on-surface": "#e3e2e2", "inverse-primary": "#446900", "inverse-on-surface": "#2f3131", "surface-bright": "#383939", "on-tertiary-container": "#895b00", "surface-container": "#1e2020", "secondary-fixed-dim": "#aad378", "primary-fixed": "#b1f746", "inverse-surface": "#e3e2e2", "surface-dim": "#121414", "on-secondary-fixed-variant": "#2f4f00", "secondary": "#aad378", "on-tertiary": "#442b00", "surface-container-low": "#1a1c1c", "secondary-fixed": "#c6f091", "on-secondary-fixed": "#102000", "secondary-container": "#315201", "surface-container-highest": "#343535", "on-error": "#690005", "on-error-container": "#ffdad6", "on-secondary": "#1f3700", "tertiary": "#ffffff" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "margin": "1rem", "margin-tablet": "2rem", "gutter": "1rem", "space-md": "1rem", "space-lg": "1.5rem", "space-sm": "0.5rem", "space-xl": "2.5rem", "margin-desktop": "3rem", "gutter-desktop": "1.5rem", "space-xs": "0.25rem" }, fontFamily: { "body-lg": ["Montserrat"], "metric-lg": ["Space Grotesk"], "headline-lg-mobile": ["Montserrat"], "body-sm": ["Montserrat"], "headline-lg": ["Montserrat"], "label-caps": ["Space Grotesk"], "metric-xl": ["Space Grotesk"], "display-hero-mobile": ["Montserrat"], "label-interactive": ["Space Grotesk"], "metric-xl-mobile": ["Space Grotesk"], "body-md": ["Montserrat"], "headline-sm": ["Montserrat"], "headline-md": ["Montserrat"], "metric-md": ["Space Grotesk"], "display-hero": ["Montserrat"] }, fontSize: { "body-lg": ["16px", { lineHeight: "24px", letterSpacing: "0em", fontWeight: "500" }], "metric-lg": ["28px", { lineHeight: "32px", letterSpacing: "-0.02em", fontWeight: "600" }], "headline-lg-mobile": ["28px", { lineHeight: "36px", letterSpacing: "-0.01em", fontWeight: "700" }], "body-sm": ["12px", { lineHeight: "16px", letterSpacing: "0.01em", fontWeight: "400" }], "headline-lg": ["36px", { lineHeight: "44px", letterSpacing: "-0.02em", fontWeight: "700" }], "label-caps": ["11px", { lineHeight: "14px", letterSpacing: "0.08em", fontWeight: "700" }], "metric-xl": ["48px", { lineHeight: "52px", letterSpacing: "-0.04em", fontWeight: "700" }], "display-hero-mobile": ["40px", { lineHeight: "48px", letterSpacing: "-0.02em", fontWeight: "800" }], "label-interactive": ["14px", { lineHeight: "18px", letterSpacing: "0.02em", fontWeight: "600" }], "metric-xl-mobile": ["36px", { lineHeight: "40px", letterSpacing: "-0.03em", fontWeight: "700" }], "body-md": ["14px", { lineHeight: "20px", letterSpacing: "0em", fontWeight: "400" }], "headline-sm": ["20px", { lineHeight: "28px", letterSpacing: "0em", fontWeight: "600" }], "headline-md": ["24px", { lineHeight: "32px", letterSpacing: "-0.01em", fontWeight: "700" }], "metric-md": ["20px", { lineHeight: "26px", letterSpacing: "-0.01em", fontWeight: "600" }], "display-hero": ["56px", { lineHeight: "64px", letterSpacing: "-0.03em", fontWeight: "800" }] } } } };</script><style>@layer base{html,body{width:100%;margin:0;padding:0;min-height:100%;}body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased flex flex-col min-h-screen selection:bg-primary-container selection:text-on-primary-container"><main class="flex flex-col relative w-full min-h-screen bg-surface pt-safe pb-safe"><div class="flex flex-col w-full text-on-surface pb-10">
+<!-- Modal Frame Wrapper with Cockpit Edge Glow -->
+<div class="flex flex-col w-full bg-surface-container rounded-t-[32px] pt-3 px-4 pb-6 shadow-2xl relative overflow-hidden">
+<!-- Top Modal Handle -->
+<div class="flex justify-center items-center w-full py-1">
+<div class="w-12 h-1.5 rounded-full bg-surface-variant/80"></div>
+</div>
+<!-- Header Section -->
+<div class="flex items-center justify-between mt-2 mb-4">
+<div class="flex items-center space-x-2.5">
+<span class="flex h-2.5 w-2.5 rounded-full bg-primary-container animate-ping"></span>
+<span class="font-label-caps text-label-caps tracking-widest text-primary-container uppercase">
+          LOG NUTRITION // SCAN &amp; DISCOVER
+        </span>
+</div>
+<button aria-label="Close Modal" class="w-8 h-8 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center hover:text-white transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<!-- 1. LIVE BARCODE VIEWFINDER HUD SECTION -->
+<div class="relative w-full aspect-[16/10] rounded-2xl bg-surface-container-lowest overflow-hidden flex flex-col justify-between p-3.5 mb-5 shadow-inner">
+<!-- Simulated Camera Live Feed Texture Overlay -->
+<div class="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-black/80 pointer-events-none z-10"></div>
+<!-- Subtle Tactical Grid Overlay -->
+<div class="absolute inset-0 opacity-10 pointer-events-none bg-[radial-gradient(#b1f746_1px,transparent_1px)] [background-size:16px_16px]"></div>
+<!-- Viewfinder Top HUD Bar -->
+<div class="relative z-20 flex items-center justify-between w-full">
+<div class="inline-flex items-center space-x-1.5 bg-surface-container-lowest/80 backdrop-blur-md px-2.5 py-1 rounded-full">
+<span class="material-symbols-outlined text-primary-container text-[14px]">sensors</span>
+<span class="font-label-caps text-[10px] tracking-wider text-primary-container uppercase">AI CAMERA ACTIVE</span>
+</div>
+<!-- Controls: Flash & Camera Flip -->
+<div class="flex items-center space-x-2">
+<button class="w-8 h-8 rounded-full bg-surface-container-high/90 text-white flex items-center justify-center backdrop-blur-sm transition-all shadow-md" id="torch-btn" onclick="this.classList.toggle('bg-primary-container'); this.classList.toggle('text-on-primary'); this.classList.toggle('text-white')" type="button">
+<span class="material-symbols-outlined text-[16px]">flash_on</span>
+</button>
+<button class="w-8 h-8 rounded-full bg-surface-container-high/90 text-white flex items-center justify-center backdrop-blur-sm hover:text-primary-container transition-colors shadow-md" type="button">
+<span class="material-symbols-outlined text-[16px]">flip_camera_ios</span>
+</button>
+</div>
+</div>
+<!-- Central Laser Scan Frame & Corner HUD Reticles -->
+<div class="relative z-20 mx-auto w-52 h-28 my-auto flex items-center justify-center">
+<!-- Corner Brackets (Styled via absolute spans) -->
+<span class="absolute top-0 left-0 w-5 h-5 border-t-2 border-l-2 border-primary-container rounded-tl-sm pointer-events-none"></span>
+<span class="absolute top-0 right-0 w-5 h-5 border-t-2 border-r-2 border-primary-container rounded-tr-sm pointer-events-none"></span>
+<span class="absolute bottom-0 left-0 w-5 h-5 border-b-2 border-l-2 border-primary-container rounded-bl-sm pointer-events-none"></span>
+<span class="absolute bottom-0 right-0 w-5 h-5 border-b-2 border-r-2 border-primary-container rounded-br-sm pointer-events-none"></span>
+<!-- Animated Neon Laser Sweep -->
+<div class="absolute inset-x-2 h-[2px] bg-primary-container shadow-[0_0_12px_2px_#b1f746] animate-[scanLaser_2.4s_ease-in-out_infinite]"></div>
+<div class="flex items-center space-x-1.5 opacity-40">
+<span class="material-symbols-outlined text-[28px] text-white">barcode_scanner</span>
+</div>
+</div>
+<!-- Detected Item Floating Pill -->
+<div class="relative z-20 w-full flex items-center justify-between bg-surface-container-high/90 backdrop-blur-md rounded-xl p-2.5">
+<div class="flex items-center space-x-2.5 min-w-0">
+<div class="w-7 h-7 rounded-lg bg-surface-container-highest flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary-container text-[16px]">check_circle</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center space-x-1">
+<span class="font-body-sm text-[12px] font-semibold text-white truncate">Olper's Full Cream Milk</span>
+<span class="bg-secondary-container text-on-secondary-container font-label-caps text-[9px] px-1.5 py-0.5 rounded">HALAL</span>
+</div>
+<span class="font-label-caps text-[10px] text-outline truncate">EAN: 896400012345 • Open Food Facts</span>
+</div>
+</div>
+<button class="shrink-0 ml-2 px-2.5 py-1 rounded-lg bg-primary-container text-on-primary font-label-interactive text-[11px] font-bold uppercase tracking-wider" type="button">
+          Apply
+        </button>
+</div>
+</div>
+<!-- 2. HIGH VELOCITY SEARCH INPUT & BILINGUAL PILLS -->
+<div class="flex flex-col space-y-2.5 mb-5">
+<!-- Search Input -->
+<div class="relative flex items-center w-full bg-surface-container-lowest rounded-xl h-13 px-3 shadow-inner">
+<span class="material-symbols-outlined text-outline text-[20px] ml-1 mr-2">search</span>
+<input class="w-full bg-transparent text-white font-body-md text-body-md focus:outline-none placeholder:text-outline/70" id="food-search-input" placeholder="Search Pakistani staples (Daal, Roti, Karahi...)" type="text" value="Chicken Biryani"/>
+<button class="text-outline hover:text-white p-1" onclick="document.getElementById('food-search-input').value='';" type="button">
+<span class="material-symbols-outlined text-[18px]">cancel</span>
+</button>
+</div>
+<!-- Quick Category Filter Chips -->
+<div class="flex items-center space-x-2 overflow-x-auto no-scrollbar py-0.5">
+<button class="shrink-0 flex items-center space-x-1 px-3 py-1.5 rounded-full bg-surface-container-high text-primary-container font-label-caps text-label-caps" type="button">
+<span class="material-symbols-outlined text-[14px]">translate</span>
+<span>اردو تلاش</span>
+</button>
+<button class="shrink-0 px-3 py-1.5 rounded-full bg-primary-container text-on-primary font-label-caps text-label-caps font-bold" type="button">
+          Desi Staples ✓
+        </button>
+<button class="shrink-0 px-3 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-caps text-label-caps hover:text-white" type="button">
+          Raw Proteins
+        </button>
+<button class="shrink-0 px-3 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-caps text-label-caps hover:text-white" type="button">
+          Supplements &amp; Whey
+        </button>
+</div>
+</div>
+<!-- 3. PORTION MULTIPLIER & NUTRITION TELEMETRY WIDGET -->
+<div class="flex flex-col bg-surface-container-low rounded-2xl p-4 mb-5 shadow-lg">
+<div class="flex items-center justify-between pb-3">
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-outline uppercase tracking-wider">SELECTED PORTION SIZE</span>
+<span class="font-headline-sm text-headline-sm text-white">Chicken Biryani</span>
+</div>
+<!-- Quantity Stepper Counter -->
+<div class="flex items-center bg-surface-container-lowest rounded-xl p-1 shadow-inner">
+<button class="w-8 h-8 rounded-lg bg-surface-container-high text-white font-bold flex items-center justify-center hover:bg-surface-variant active:scale-95 transition-all" id="dec-btn" type="button">
+<span class="material-symbols-outlined text-[16px]">remove</span>
+</button>
+<span class="font-metric-md text-metric-md text-primary-container px-3 min-w-[48px] text-center" id="qty-val">1.5</span>
+<button class="w-8 h-8 rounded-lg bg-surface-container-high text-white font-bold flex items-center justify-center hover:bg-surface-variant active:scale-95 transition-all" id="inc-btn" type="button">
+<span class="material-symbols-outlined text-[16px]">add</span>
+</button>
+</div>
+</div>
+<!-- Unit Selector Tags -->
+<div class="flex items-center space-x-2 overflow-x-auto no-scrollbar py-2">
+<button class="unit-chip shrink-0 px-3 py-1 rounded-lg bg-primary-container text-on-primary font-label-caps text-[11px] font-bold" type="button">
+          Plate (350g)
+        </button>
+<button class="unit-chip shrink-0 px-3 py-1 rounded-lg bg-surface-container-high text-on-surface-variant font-label-caps text-[11px] hover:text-white" type="button">
+          Katori (180g)
+        </button>
+<button class="unit-chip shrink-0 px-3 py-1 rounded-lg bg-surface-container-high text-on-surface-variant font-label-caps text-[11px] hover:text-white" type="button">
+          Grams (g)
+        </button>
+<button class="unit-chip shrink-0 px-3 py-1 rounded-lg bg-surface-container-high text-on-surface-variant font-label-caps text-[11px] hover:text-white" type="button">
+          Roti (60g)
+        </button>
+</div>
+<!-- Live Dynamic Macro Breakdown HUD -->
+<div class="grid grid-cols-4 gap-2 pt-3 mt-1">
+<div class="flex flex-col bg-surface-container-lowest rounded-xl p-2.5 items-center justify-center text-center">
+<span class="font-label-caps text-[10px] text-outline uppercase">ENERGY</span>
+<div class="flex items-baseline space-x-0.5 mt-0.5">
+<span class="font-metric-md text-metric-md text-primary-container font-bold" id="stat-cals">485</span>
+<span class="font-label-caps text-[9px] text-outline">kcal</span>
+</div>
+</div>
+<div class="flex flex-col bg-surface-container-lowest rounded-xl p-2.5 items-center justify-center text-center">
+<span class="font-label-caps text-[10px] text-secondary font-semibold uppercase">PROTEIN</span>
+<div class="flex items-baseline space-x-0.5 mt-0.5">
+<span class="font-metric-md text-metric-md text-white font-bold" id="stat-prot">38</span>
+<span class="font-label-caps text-[9px] text-outline">g</span>
+</div>
+</div>
+<div class="flex flex-col bg-surface-container-lowest rounded-xl p-2.5 items-center justify-center text-center">
+<span class="font-label-caps text-[10px] text-tertiary-fixed-dim uppercase">CARBS</span>
+<div class="flex items-baseline space-x-0.5 mt-0.5">
+<span class="font-metric-md text-metric-md text-white font-bold" id="stat-carb">52</span>
+<span class="font-label-caps text-[9px] text-outline">g</span>
+</div>
+</div>
+<div class="flex flex-col bg-surface-container-lowest rounded-xl p-2.5 items-center justify-center text-center">
+<span class="font-label-caps text-[10px] text-error uppercase">FAT</span>
+<div class="flex items-baseline space-x-0.5 mt-0.5">
+<span class="font-metric-md text-metric-md text-white font-bold" id="stat-fat">14</span>
+<span class="font-label-caps text-[9px] text-outline">g</span>
+</div>
+</div>
+</div>
+</div>
+<!-- 4. RECENT & VERIFIED PAKISTANI STAPLES LIST -->
+<div class="flex flex-col mb-4">
+<div class="flex items-center justify-between mb-2 px-1">
+<span class="font-label-caps text-label-caps tracking-widest text-outline uppercase">RECENT / VERIFIED STAPLES</span>
+<span class="font-label-caps text-[10px] text-primary-container">HALAL DB SYNCED</span>
+</div>
+<div class="flex flex-col space-y-2">
+<!-- Item 1 -->
+<div class="flex items-center justify-between bg-surface-container-low rounded-xl p-3 hover:bg-surface-container-high transition-colors">
+<div class="flex items-center space-x-3 min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container-lowest flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary text-[20px]">rice_bowl</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md font-semibold text-white truncate">Chicken Biryani (Basmati &amp; Thigh)</span>
+<span class="font-body-sm text-body-sm text-outline">1 plate (350g) • 650 kcal • 42g P</span>
+</div>
+</div>
+<button class="shrink-0 ml-2 px-3 py-1.5 rounded-lg bg-surface-container-highest text-white font-label-interactive text-[12px] hover:bg-primary-container hover:text-on-primary transition-all" type="button">
+            + Quick Add
+          </button>
+</div>
+<!-- Item 2 -->
+<div class="flex items-center justify-between bg-surface-container-low rounded-xl p-3 hover:bg-surface-container-high transition-colors">
+<div class="flex items-center space-x-3 min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container-lowest flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-[20px]">egg_alt</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md font-semibold text-white truncate">Anda Paratha (Desi Ghee Crisp)</span>
+<span class="font-body-sm text-body-sm text-outline">1 piece • 380 kcal • 14g P</span>
+</div>
+</div>
+<button class="shrink-0 ml-2 px-3 py-1.5 rounded-lg bg-surface-container-highest text-white font-label-interactive text-[12px] hover:bg-primary-container hover:text-on-primary transition-all" type="button">
+            + Quick Add
+          </button>
+</div>
+<!-- Item 3 -->
+<div class="flex items-center justify-between bg-surface-container-low rounded-xl p-3 hover:bg-surface-container-high transition-colors">
+<div class="flex items-center space-x-3 min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container-lowest flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary-container text-[20px]">soup_kitchen</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md font-semibold text-white truncate">Daal Mash with Garlic Tadka</span>
+<span class="font-body-sm text-body-sm text-outline">1 katori (180g) • 210 kcal • 12g P</span>
+</div>
+</div>
+<button class="shrink-0 ml-2 px-3 py-1.5 rounded-lg bg-surface-container-highest text-white font-label-interactive text-[12px] hover:bg-primary-container hover:text-on-primary transition-all" type="button">
+            + Quick Add
+          </button>
+</div>
+</div>
+</div>
+<!-- 5. TACTICAL ACTION CTA STACK -->
+<div class="flex flex-col space-y-2.5 pt-2">
+<button class="w-full h-14 rounded-2xl bg-primary-container text-on-primary font-label-interactive text-label-interactive uppercase font-bold tracking-wider flex items-center justify-center space-x-2 shadow-[0_0_24px_-4px_rgba(177,247,70,0.4)] active:scale-[0.98] transition-transform" id="log-submit-cta" type="button">
+<span class="material-symbols-outlined text-[20px]">check</span>
+<span id="log-cta-label">LOG TO TODAY'S JOURNAL (485 KCAL)</span>
+</button>
+<button class="w-full h-12 rounded-xl bg-surface-container-high text-white font-label-interactive text-body-sm tracking-wide flex items-center justify-center space-x-1.5 hover:bg-surface-variant transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">edit_note</span>
+<span>Manual Custom Entry</span>
+</button>
+</div>
+</div>
+<style>
+    @keyframes scanLaser {
+      0% { top: 4px; opacity: 0.2; }
+      50% { top: calc(100% - 6px); opacity: 1; }
+      100% { top: 4px; opacity: 0.2; }
+    }
+  </style>
+<script>
+    (function initOverlayInteractions() {
+      let portion = 1.5;
+      const baseCals = 323.33;
+      const baseProt = 25.33;
+      const baseCarbs = 34.66;
+      const baseFat = 9.33;
+
+      const qtyDisplay = document.getElementById('qty-val');
+      const calsDisplay = document.getElementById('stat-cals');
+      const protDisplay = document.getElementById('stat-prot');
+      const carbDisplay = document.getElementById('stat-carb');
+      const fatDisplay = document.getElementById('stat-fat');
+      const ctaLabel = document.getElementById('log-cta-label');
+
+      function updateNutritionHUD() {
+        const cals = Math.round(baseCals * portion);
+        const prot = Math.round(baseProt * portion);
+        const carbs = Math.round(baseCarbs * portion);
+        const fat = Math.round(baseFat * portion);
+
+        qtyDisplay.textContent = portion.toFixed(1);
+        calsDisplay.textContent = cals;
+        protDisplay.textContent = prot;
+        carbDisplay.textContent = carbs;
+        fatDisplay.textContent = fat;
+        ctaLabel.textContent = `LOG TO TODAY'S JOURNAL (${cals} KCAL)`;
+      }
+
+      document.getElementById('dec-btn').addEventListener('click', () => {
+        if (portion > 0.5) {
+          portion -= 0.5;
+          updateNutritionHUD();
+        }
+      });
+
+      document.getElementById('inc-btn').addEventListener('click', () => {
+        if (portion < 8.0) {
+          portion += 0.5;
+          updateNutritionHUD();
+        }
+      });
+
+      // Serving Unit Chips Selector
+      const unitChips = document.querySelectorAll('.unit-chip');
+      unitChips.forEach((chip) => {
+        chip.addEventListener('click', () => {
+          unitChips.forEach(c => {
+            c.className = 'unit-chip shrink-0 px-3 py-1 rounded-lg bg-surface-container-high text-on-surface-variant font-label-caps text-[11px] hover:text-white';
+          });
+          chip.className = 'unit-chip shrink-0 px-3 py-1 rounded-lg bg-primary-container text-on-primary font-label-caps text-[11px] font-bold';
+        });
+      });
+    })();
+  </script>
+</div></main></body></html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;margin:0;padding:0;background-color:#121414;color:#e3e2e2;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "background": "#121414", "on-surface-variant": "#c2cab0", "tertiary": "#ffffff", "surface": "#121414", "on-tertiary-fixed-variant": "#624000", "secondary-fixed": "#c6f091", "on-tertiary-container": "#895b00", "inverse-primary": "#446900", "on-primary": "#213600", "on-tertiary": "#442b00", "primary-container": "#b1f746", "surface-container-low": "#1a1c1c", "secondary": "#aad378", "on-error-container": "#ffdad6", "on-tertiary-fixed": "#291800", "on-secondary-fixed": "#102000", "secondary-fixed-dim": "#aad378", "on-secondary-fixed-variant": "#2f4f00", "outline-variant": "#424936", "inverse-on-surface": "#2f3131", "on-secondary-container": "#9dc56b", "on-primary-fixed": "#111f00", "tertiary-fixed": "#ffddb1", "error": "#ffb4ab", "on-error": "#690005", "on-surface": "#e3e2e2", "error-container": "#93000a", "surface-dim": "#121414", "on-primary-fixed-variant": "#324f00", "inverse-surface": "#e3e2e2", "tertiary-fixed-dim": "#ffba4b", "surface-container-lowest": "#0d0e0f", "surface-bright": "#383939", "on-secondary": "#1f3700", "surface-container-highest": "#343535", "surface-container": "#1e2020", "surface-variant": "#343535", "primary-fixed-dim": "#96da27", "tertiary-container": "#ffddb1", "primary": "#ffffff", "on-primary-container": "#486f00", "outline": "#8c947c", "secondary-container": "#315201", "surface-tint": "#96da27", "surface-container-high": "#292a2a", "primary-fixed": "#b1f746", "on-background": "#e3e2e2" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "margin": "1rem", "space-sm": "0.5rem", "gutter": "1rem", "space-xl": "2.5rem", "space-lg": "1.5rem", "gutter-desktop": "1.5rem", "margin-desktop": "3rem", "space-xs": "0.25rem", "space-md": "1rem", "margin-tablet": "2rem" }, fontFamily: { "label-interactive": ["Space Grotesk"], "headline-lg-mobile": ["Montserrat"], "body-md": ["Montserrat"], "body-sm": ["Montserrat"], "display-hero-mobile": ["Montserrat"], "metric-md": ["Space Grotesk"], "headline-lg": ["Montserrat"], "metric-xl-mobile": ["Space Grotesk"], "headline-sm": ["Montserrat"], "body-lg": ["Montserrat"], "headline-md": ["Montserrat"], "label-caps": ["Space Grotesk"], "display-hero": ["Montserrat"], "metric-lg": ["Space Grotesk"], "metric-xl": ["Space Grotesk"] }, fontSize: { "label-interactive": ["14px", { lineHeight: "18px", letterSpacing: "0.02em", fontWeight: "600" }], "headline-lg-mobile": ["28px", { lineHeight: "36px", letterSpacing: "-0.01em", fontWeight: "700" }], "body-md": ["14px", { lineHeight: "20px", letterSpacing: "0em", fontWeight: "400" }], "body-sm": ["12px", { lineHeight: "16px", letterSpacing: "0.01em", fontWeight: "400" }], "display-hero-mobile": ["40px", { lineHeight: "48px", letterSpacing: "-0.02em", fontWeight: "800" }], "metric-md": ["20px", { lineHeight: "26px", letterSpacing: "-0.01em", fontWeight: "600" }], "headline-lg": ["36px", { lineHeight: "44px", letterSpacing: "-0.02em", fontWeight: "700" }], "metric-xl-mobile": ["36px", { lineHeight: "40px", letterSpacing: "-0.03em", fontWeight: "700" }], "headline-sm": ["20px", { lineHeight: "28px", letterSpacing: "0em", fontWeight: "600" }], "body-lg": ["16px", { lineHeight: "24px", letterSpacing: "0em", fontWeight: "500" }], "headline-md": ["24px", { lineHeight: "32px", letterSpacing: "-0.01em", fontWeight: "700" }], "label-caps": ["11px", { lineHeight: "14px", letterSpacing: "0.08em", fontWeight: "700" }], "display-hero": ["56px", { lineHeight: "64px", letterSpacing: "-0.03em", fontWeight: "800" }], "metric-lg": ["28px", { lineHeight: "32px", letterSpacing: "-0.02em", fontWeight: "600" }], "metric-xl": ["48px", { lineHeight: "52px", letterSpacing: "-0.04em", fontWeight: "700" }] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><button aria-label="Go back" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface hover:text-primary-container transition-colors" onclick="history.back()" type="button"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><h1 class="font-headline-sm text-headline-sm uppercase tracking-tight text-on-surface line-clamp-1">App Diagnostics</h1></div><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-safe bg-surface"><div class="flex flex-col w-full px-margin pb-space-xl space-y-space-md">
+<!-- Security Shield & Account Identity Card -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-high p-space-md shadow-xl">
+<!-- Ambient Cockpit Halo Glow -->
+<div class="absolute -right-12 -top-12 w-40 h-40 rounded-full bg-primary-container/10 blur-2xl pointer-events-none"></div>
+<div class="absolute -left-10 -bottom-10 w-36 h-36 rounded-full bg-error/10 blur-2xl pointer-events-none"></div>
+<div class="relative flex flex-col items-center text-center space-y-space-sm pt-space-xs">
+<!-- High-Tech Shield Insignia with Pulse Halo -->
+<div class="relative flex items-center justify-center w-16 h-16 rounded-full bg-surface-container-lowest shadow-inner">
+<div class="absolute inset-0 rounded-full border border-primary-container/20 animate-ping opacity-25"></div>
+<span class="material-symbols-outlined text-primary-container text-[32px]" style="font-variation-settings: 'FILL' 1;">security</span>
+</div>
+<div class="space-y-space-xs">
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-primary-container">SESSION RECOVERY CHECKPOINT</span>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">Sign Out of ATHLEO?</h2>
+</div>
+<!-- Identity Strip -->
+<div class="w-full flex items-center gap-space-sm p-space-sm rounded-lg bg-surface-container-low mt-space-xs">
+<div class="relative w-12 h-12 rounded-full overflow-hidden shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Close up athletic portrait of Farhan Khan in dark studio lighting with subtle green kinetic rim light, focused expression, high contrast precision athletic luxury" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAP9cksQ00p4vn3au_TOuTNy57AqQhG7xDUl-vtb7u9l4CVIvi6meSyUE0A7lwjz0l673rsn-OP8K51-PC-jz4jEUnI6BiSKEuRnhOX9e8aBhIuqr69azXOVV2SPqe1mnv8mkE1phETzDJo8DV_Z98j55k1nbnH5e3TI-GzhbCsLVtO9stj6gTAfMsKLQVN6Q2qjhDP1WqrW-uTg9ZLb1qS2OldO2xbivUKNi6TZFa37xkkrv-LeuaX"/>
+<span class="absolute bottom-0 right-0 w-3 h-3 rounded-full bg-primary-container"></span>
+</div>
+<div class="flex flex-col text-left min-w-0 flex-1">
+<div class="flex items-center justify-between">
+<span class="font-body-lg text-body-lg text-on-surface font-semibold truncate">Farhan Khan</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant bg-surface-container-highest px-space-xs py-0.5 rounded">PRO TIER</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">farhan@athleo.athlete</span>
+<span class="font-body-sm text-body-sm text-secondary font-medium mt-0.5 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">bolt</span> Active Session: 4h 18m • iPhone 15 Pro
+          </span>
+</div>
+</div>
+</div>
+</div>
+<!-- Biometric Cloud Sync Telemetry Panel -->
+<div class="rounded-xl bg-surface-container p-space-md space-y-space-sm shadow-md">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary-container text-[20px]">cloud_done</span>
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant tracking-wider">Cloud Data Integrity</span>
+</div>
+<div class="flex items-center gap-1.5 px-space-sm py-0.5 rounded-full bg-secondary-container text-on-secondary-container">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-pulse"></span>
+<span class="font-label-caps text-label-caps font-bold">100% UP TO DATE</span>
+</div>
+</div>
+<!-- Sync Items Checklist -->
+<div class="space-y-space-xs pt-space-xs">
+<div class="flex items-start gap-space-sm p-space-sm rounded-lg bg-surface-container-low">
+<div class="w-6 h-6 rounded-full bg-primary-container/15 flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-primary-container text-[16px]">check</span>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface font-semibold">Hypertrophy Workout Day 3</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">2m ago</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">5 sets RPE 9.2 + rest cadence telemetry committed</span>
+</div>
+</div>
+<div class="flex items-start gap-space-sm p-space-sm rounded-lg bg-surface-container-low">
+<div class="w-6 h-6 rounded-full bg-primary-container/15 flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-primary-container text-[16px]">check</span>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface font-semibold">Apple HealthKit Sync Stream</span>
+<span class="font-label-caps text-label-caps text-secondary font-bold">STREAM INTACT</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Resting HR (48 bpm), HRV (82ms), VO2 Max updated</span>
+</div>
+</div>
+<div class="flex items-start gap-space-sm p-space-sm rounded-lg bg-surface-container-low">
+<div class="w-6 h-6 rounded-full bg-primary-container/15 flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-primary-container text-[16px]">verified_user</span>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface font-semibold">Progress Photo Vault</span>
+<span class="font-label-caps text-label-caps text-primary-container">AES-256</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Zero-knowledge local mirror verified &amp; encrypted</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Session Security Protocols & Checkboxes -->
+<div class="rounded-xl bg-surface-container p-space-md space-y-space-md shadow-md">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant tracking-wider">HARDWARE &amp; ENCLAVE CONTROL</span>
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">lock_reset</span>
+</div>
+<!-- Toggle Item 1: All Hardware -->
+<label class="group flex items-start gap-space-sm cursor-pointer select-none">
+<div class="relative pt-0.5">
+<input class="sr-only peer" id="signout-hardware" type="checkbox"/>
+<div class="w-5 h-5 rounded bg-surface-container-high peer-checked:bg-primary-container transition-colors flex items-center justify-center shadow-inner">
+<span class="material-symbols-outlined text-on-primary text-[14px] opacity-0 peer-checked:opacity-100 transition-opacity font-bold">check</span>
+</div>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<span class="font-body-md text-body-md text-on-surface font-semibold group-hover:text-primary transition-colors">Sign out of all authorized hardware</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Includes iPhone 15 Pro, Apple Watch Ultra 2, iPad Pro 12.9"</span>
+</div>
+</label>
+<!-- Toggle Item 2: Face ID Enclave -->
+<label class="group flex items-start gap-space-sm cursor-pointer select-none">
+<div class="relative pt-0.5">
+<input checked="" class="sr-only peer" id="preserve-biometric" type="checkbox"/>
+<div class="w-5 h-5 rounded bg-surface-container-high peer-checked:bg-primary-container transition-colors flex items-center justify-center shadow-inner">
+<span class="material-symbols-outlined text-on-primary text-[14px] opacity-0 peer-checked:opacity-100 transition-opacity font-bold">check</span>
+</div>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center gap-1.5">
+<span class="font-body-md text-body-md text-on-surface font-semibold group-hover:text-primary transition-colors">Preserve Face ID cache locally</span>
+<span class="font-label-caps text-label-caps text-on-secondary-fixed bg-secondary-fixed-dim/20 px-1.5 py-0.5 rounded">RECOMMENDED</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Allows 1-tap instant biometric telemetry resume upon return</span>
+</div>
+</label>
+</div>
+<!-- Primary / Secondary Action CTAs -->
+<div class="flex flex-col space-y-space-sm pt-space-xs">
+<!-- Crimson Action -->
+<button class="relative group overflow-hidden w-full h-14 rounded-xl bg-error-container text-on-error-container font-label-interactive text-label-interactive uppercase tracking-wider flex items-center justify-center gap-2 active:scale-[0.98] transition-all shadow-lg hover:shadow-error/30" id="btn-terminate" type="button">
+<span class="material-symbols-outlined text-[20px]">power_settings_new</span>
+<span class="font-bold">Confirm &amp; Terminate Session</span>
+<div class="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none"></div>
+</button>
+<!-- Neutral Safe Stay Button -->
+<button class="w-full h-12 rounded-xl bg-surface-container-high text-on-surface font-label-interactive text-label-interactive uppercase tracking-wider flex items-center justify-center gap-2 active:scale-[0.98] transition-all hover:bg-surface-bright" onclick="history.back()" type="button">
+<span class="material-symbols-outlined text-[18px]">undo</span>
+<span>Cancel &amp; Stay Signed In</span>
+</button>
+</div>
+<!-- Athlete Concierge Recovery Drawer Trigger -->
+<div class="rounded-xl bg-surface-container-low p-space-sm flex items-center justify-between mt-space-xs">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[20px]">support_agent</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-body-sm text-body-sm text-on-surface font-semibold">Locked out or key lost?</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Request Athlete Concierge emergency key</span>
+</div>
+</div>
+<button class="px-space-sm py-1.5 rounded-lg bg-surface-container-highest text-primary-container font-label-caps text-label-caps uppercase tracking-wider active:scale-95 transition-transform flex items-center gap-1" id="btn-concierge" type="button">
+      Recover
+      <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+<!-- Interactive Feedback Overlay Container (Hidden by default) -->
+<div class="hidden fixed bottom-6 left-margin right-margin z-50 p-space-sm rounded-xl bg-surface-bright text-on-surface shadow-2xl flex items-center gap-space-sm transition-all transform translate-y-4" id="feedback-toast">
+<span class="material-symbols-outlined text-primary-container text-[20px]">info</span>
+<span class="font-body-sm text-body-sm flex-1" id="feedback-text">Protocol acknowledged</span>
+</div>
+</div>
+<script>
+  (function() {
+    const btnTerminate = document.getElementById('btn-terminate');
+    const btnConcierge = document.getElementById('btn-concierge');
+    const toast = document.getElementById('feedback-toast');
+    const toastText = document.getElementById('feedback-text');
+    let toastTimer = null;
+
+    function showToast(message) {
+      if (toastTimer) clearTimeout(toastTimer);
+      toastText.textContent = message;
+      toast.classList.remove('hidden');
+      setTimeout(() => {
+        toast.classList.remove('translate-y-4');
+        toast.classList.add('translate-y-0');
+      }, 10);
+
+      toastTimer = setTimeout(() => {
+        toast.classList.add('translate-y-4');
+        toast.classList.remove('translate-y-0');
+        setTimeout(() => toast.classList.add('hidden'), 200);
+      }, 3000);
+    }
+
+    if (btnTerminate) {
+      btnTerminate.addEventListener('click', function() {
+        const signoutAll = document.getElementById('signout-hardware').checked;
+        const preserveFace = document.getElementById('preserve-biometric').checked;
+        
+        btnTerminate.classList.add('opacity-75');
+        btnTerminate.innerHTML = '<span class="material-symbols-outlined animate-spin text-[20px]">sync</span><span>Revoking Hardware Keys...</span>';
+        
+        setTimeout(() => {
+          showToast(`Session ended. ${signoutAll ? '3 hardware nodes invalidated.' : 'Local node detached.'} ${preserveFace ? 'Biometrics retained.' : 'Enclave wiped.'}`);
+          setTimeout(() => {
+            history.back();
+          }, 1500);
+        }, 900);
+      });
+    }
+
+    if (btnConcierge) {
+      btnConcierge.addEventListener('click', function() {
+        showToast('Connecting to 24/7 ATHLEO Performance Enclave Desk...');
+      });
+    }
+  })();
+</script></main></body></html>

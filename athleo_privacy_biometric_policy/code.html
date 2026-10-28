@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;margin:0;padding:0;background-color:#121414;color:#e3e2e2;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "background": "#121414", "on-surface-variant": "#c2cab0", "tertiary": "#ffffff", "surface": "#121414", "on-tertiary-fixed-variant": "#624000", "secondary-fixed": "#c6f091", "on-tertiary-container": "#895b00", "inverse-primary": "#446900", "on-primary": "#213600", "on-tertiary": "#442b00", "primary-container": "#b1f746", "surface-container-low": "#1a1c1c", "secondary": "#aad378", "on-error-container": "#ffdad6", "on-tertiary-fixed": "#291800", "on-secondary-fixed": "#102000", "secondary-fixed-dim": "#aad378", "on-secondary-fixed-variant": "#2f4f00", "outline-variant": "#424936", "inverse-on-surface": "#2f3131", "on-secondary-container": "#9dc56b", "on-primary-fixed": "#111f00", "tertiary-fixed": "#ffddb1", "error": "#ffb4ab", "on-error": "#690005", "on-surface": "#e3e2e2", "error-container": "#93000a", "surface-dim": "#121414", "on-primary-fixed-variant": "#324f00", "inverse-surface": "#e3e2e2", "tertiary-fixed-dim": "#ffba4b", "surface-container-lowest": "#0d0e0f", "surface-bright": "#383939", "on-secondary": "#1f3700", "surface-container-highest": "#343535", "surface-container": "#1e2020", "surface-variant": "#343535", "primary-fixed-dim": "#96da27", "tertiary-container": "#ffddb1", "primary": "#ffffff", "on-primary-container": "#486f00", "outline": "#8c947c", "secondary-container": "#315201", "surface-tint": "#96da27", "surface-container-high": "#292a2a", "primary-fixed": "#b1f746", "on-background": "#e3e2e2" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "margin": "1rem", "space-sm": "0.5rem", "gutter": "1rem", "space-xl": "2.5rem", "space-lg": "1.5rem", "gutter-desktop": "1.5rem", "margin-desktop": "3rem", "space-xs": "0.25rem", "space-md": "1rem", "margin-tablet": "2rem" }, fontFamily: { "label-interactive": ["Space Grotesk"], "headline-lg-mobile": ["Montserrat"], "body-md": ["Montserrat"], "body-sm": ["Montserrat"], "display-hero-mobile": ["Montserrat"], "metric-md": ["Space Grotesk"], "headline-lg": ["Montserrat"], "metric-xl-mobile": ["Space Grotesk"], "headline-sm": ["Montserrat"], "body-lg": ["Montserrat"], "headline-md": ["Montserrat"], "label-caps": ["Space Grotesk"], "display-hero": ["Montserrat"], "metric-lg": ["Space Grotesk"], "metric-xl": ["Space Grotesk"] }, fontSize: { "label-interactive": ["14px", { lineHeight: "18px", letterSpacing: "0.02em", fontWeight: "600" }], "headline-lg-mobile": ["28px", { lineHeight: "36px", letterSpacing: "-0.01em", fontWeight: "700" }], "body-md": ["14px", { lineHeight: "20px", letterSpacing: "0em", fontWeight: "400" }], "body-sm": ["12px", { lineHeight: "16px", letterSpacing: "0.01em", fontWeight: "400" }], "display-hero-mobile": ["40px", { lineHeight: "48px", letterSpacing: "-0.02em", fontWeight: "800" }], "metric-md": ["20px", { lineHeight: "26px", letterSpacing: "-0.01em", fontWeight: "600" }], "headline-lg": ["36px", { lineHeight: "44px", letterSpacing: "-0.02em", fontWeight: "700" }], "metric-xl-mobile": ["36px", { lineHeight: "40px", letterSpacing: "-0.03em", fontWeight: "700" }], "headline-sm": ["20px", { lineHeight: "28px", letterSpacing: "0em", fontWeight: "600" }], "body-lg": ["16px", { lineHeight: "24px", letterSpacing: "0em", fontWeight: "500" }], "headline-md": ["24px", { lineHeight: "32px", letterSpacing: "-0.01em", fontWeight: "700" }], "label-caps": ["11px", { lineHeight: "14px", letterSpacing: "0.08em", fontWeight: "700" }], "display-hero": ["56px", { lineHeight: "64px", letterSpacing: "-0.03em", fontWeight: "800" }], "metric-lg": ["28px", { lineHeight: "32px", letterSpacing: "-0.02em", fontWeight: "600" }], "metric-xl": ["48px", { lineHeight: "52px", letterSpacing: "-0.04em", fontWeight: "700" }] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><button aria-label="Go back" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface hover:text-primary-container transition-colors" onclick="history.back()" type="button"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><h1 class="font-headline-sm text-headline-sm uppercase tracking-tight text-on-surface line-clamp-1">Privacy Policy</h1></div><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-safe bg-surface"><div class="flex flex-col w-full pb-10">
+<!-- Top Meta / Status Strip -->
+<div class="px-margin pt-4 pb-2">
+<div class="inline-flex items-center gap-space-xs px-3 py-1.5 rounded-full bg-surface-container-high">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-pulse"></span>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">
+        Effective Date: November 2024 • Version 3.2 • GDPR &amp; HIPAA Compliant
+      </span>
+</div>
+</div>
+<!-- Trust & Architecture Banner -->
+<div class="px-margin pt-3 pb-4">
+<div class="relative overflow-hidden rounded-xl bg-surface-container-low p-space-lg shadow-xl">
+<div class="relative z-10 flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[24px]">verified_user</span>
+</div>
+<span class="font-label-caps text-label-caps px-2.5 py-1 rounded-full bg-primary-container text-on-primary font-bold uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">lock</span>
+            End-to-End Encrypted
+          </span>
+</div>
+<div class="pt-2">
+<h2 class="font-headline-md text-headline-md text-on-surface uppercase tracking-tight">
+            Zero-Knowledge Biometric Architecture
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1.5">
+            Your physiological signatures, neural load estimates, and recovery trajectories belong exclusively to your local silicon enclave. Raw biometric streams are mathematically cryptographed prior to sync.
+          </p>
+</div>
+<!-- Telemetry Indicators -->
+<div class="grid grid-cols-3 gap-space-xs pt-3 mt-1">
+<div class="flex flex-col p-2.5 rounded-lg bg-surface-container">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Key Cipher</span>
+<span class="font-metric-md text-metric-md text-primary-container mt-0.5">AES-256</span>
+</div>
+<div class="flex flex-col p-2.5 rounded-lg bg-surface-container">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Third-Party Sell</span>
+<span class="font-metric-md text-metric-md text-on-surface mt-0.5">0.00%</span>
+</div>
+<div class="flex flex-col p-2.5 rounded-lg bg-surface-container">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Local Compute</span>
+<span class="font-metric-md text-metric-md text-secondary mt-0.5">100%</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive Policy Accordion Section -->
+<div class="px-margin flex flex-col gap-space-sm pt-2">
+<div class="flex items-center justify-between pb-1">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">
+        Policy Chapters • Expanded Governance
+      </span>
+<button class="font-label-interactive text-label-interactive text-primary-container uppercase transition-opacity hover:opacity-80" id="toggle-all-btn" type="button">
+        Expand All
+      </button>
+</div>
+<!-- Chapter 1 -->
+<details class="group rounded-xl bg-surface-container overflow-hidden transition-all duration-300" open="">
+<summary class="flex items-center justify-between p-space-md cursor-pointer list-none select-none">
+<div class="flex items-center gap-space-sm min-w-0 pr-2">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center shrink-0 text-primary-container">
+<span class="material-symbols-outlined text-[18px]">ecg_heart</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">
+              1. Biometric Telemetry &amp; HealthKit
+            </span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">
+              Heart Rate, HRV, VO2 Max, Accelerometer
+            </span>
+</div>
+</div>
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant transition-transform duration-200 group-open:rotate-180">
+          expand_more
+        </span>
+</summary>
+<div class="px-space-md pb-space-md pt-1 flex flex-col gap-space-sm text-on-surface-variant font-body-md text-body-md">
+<p>
+          ATHLEO interfaces with Apple HealthKit, Google Health Connect, and specialized ANT+/BLE chest straps via strictly read-only local runtime bridges.
+        </p>
+<div class="p-3 rounded-lg bg-surface-container-low flex flex-col gap-2">
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary-container shrink-0 mt-0.5">check_circle</span>
+<p class="font-body-sm text-body-sm text-on-surface">
+<strong class="text-on-surface font-semibold">Zero Commercial Brokerage:</strong> Biometrics are strictly quarantined. We never license, tokenize, or disclose physiological indexes to insurance cartels, pharmaceutical distributors, or ad platforms.
+            </p>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary-container shrink-0 mt-0.5">check_circle</span>
+<p class="font-body-sm text-body-sm text-on-surface">
+<strong class="text-on-surface font-semibold">On-Device HRV Transformation:</strong> RMSSD, rMSSD, and frequency domain bands (LF/HF) are derived inside the smartphone neural engine before persistent sync.
+            </p>
+</div>
+</div>
+</div>
+</details>
+<!-- Chapter 2 -->
+<details class="group rounded-xl bg-surface-container overflow-hidden transition-all duration-300">
+<summary class="flex items-center justify-between p-space-md cursor-pointer list-none select-none">
+<div class="flex items-center gap-space-sm min-w-0 pr-2">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center shrink-0 text-primary-container">
+<span class="material-symbols-outlined text-[18px]">photo_camera_front</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">
+              2. Progress Photo Vault &amp; Facial Privacy
+            </span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">
+              Hardware Vault • Auto-Redaction
+            </span>
+</div>
+</div>
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant transition-transform duration-200 group-open:rotate-180">
+          expand_more
+        </span>
+</summary>
+<div class="px-space-md pb-space-md pt-1 flex flex-col gap-space-sm text-on-surface-variant font-body-md text-body-md">
+<p>
+          Body composition snapshots and physique scans represent highly sensitive visual indices. ATHLEO shields visual logs behind independent hardware-bound crypto-layers.
+        </p>
+<div class="grid grid-cols-2 gap-space-xs pt-1">
+<div class="p-3 rounded-lg bg-surface-container-low">
+<div class="flex items-center gap-1.5 text-primary-container mb-1">
+<span class="material-symbols-outlined text-[16px]">visibility_off</span>
+<span class="font-label-interactive text-label-interactive text-on-surface">Auto-Redact</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Faces and distinctive background landmarks are blurred client-side prior to capture serialization.
+            </p>
+</div>
+<div class="p-3 rounded-lg bg-surface-container-low">
+<div class="flex items-center gap-1.5 text-primary-container mb-1">
+<span class="material-symbols-outlined text-[16px]">fingerprint</span>
+<span class="font-label-interactive text-label-interactive text-on-surface">Biometric Lock</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Every gallery view requires fresh Face ID or Touch ID authentication directly via Secure Enclave.
+            </p>
+</div>
+</div>
+</div>
+</details>
+<!-- Chapter 3 -->
+<details class="group rounded-xl bg-surface-container overflow-hidden transition-all duration-300">
+<summary class="flex items-center justify-between p-space-md cursor-pointer list-none select-none">
+<div class="flex items-center gap-space-sm min-w-0 pr-2">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center shrink-0 text-primary-container">
+<span class="material-symbols-outlined text-[18px]">neurology</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">
+              3. AI Coach Processing (Athena AI)
+            </span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">
+              Anonymous Context • Ephemeral Weights
+            </span>
+</div>
+</div>
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant transition-transform duration-200 group-open:rotate-180">
+          expand_more
+        </span>
+</summary>
+<div class="px-space-md pb-space-md pt-1 flex flex-col gap-space-sm text-on-surface-variant font-body-md text-body-md">
+<p>
+          The Athena AI adaptive training agent calculates periodization schemes, load spikes, and deload prompts using cryptographically masked state vectors.
+        </p>
+<div class="p-3 rounded-lg bg-surface-container-low flex flex-col gap-2">
+<div class="flex items-center justify-between pb-1">
+<span class="font-label-caps text-label-caps text-on-surface uppercase">PII Scrubbing Protocol</span>
+<span class="font-label-caps text-label-caps text-primary-container">Active</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Names, precise coordinates, emails, and device IDs are stripped into randomized ephemeral session nonces before LLM inference queries are fired. Weights are never fine-tuned on raw individual athlete inputs.
+          </p>
+</div>
+</div>
+</details>
+<!-- Chapter 4 -->
+<details class="group rounded-xl bg-surface-container overflow-hidden transition-all duration-300">
+<summary class="flex items-center justify-between p-space-md cursor-pointer list-none select-none">
+<div class="flex items-center gap-space-sm min-w-0 pr-2">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center shrink-0 text-primary-container">
+<span class="material-symbols-outlined text-[18px]">database</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">
+              4. Data Ownership &amp; Portability
+            </span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">
+              1-Tap Complete Export • Server Purge
+            </span>
+</div>
+</div>
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant transition-transform duration-200 group-open:rotate-180">
+          expand_more
+        </span>
+</summary>
+<div class="px-space-md pb-space-md pt-1 flex flex-col gap-space-sm text-on-surface-variant font-body-md text-body-md">
+<p>
+          You hold irrevocable legal sovereignty over your performance records. In compliance with Article 20 of GDPR and CCPA statutes:
+        </p>
+<div class="flex flex-col gap-2 p-3 rounded-lg bg-surface-container-low">
+<div class="flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface">Direct Export Formats</span>
+<span class="font-label-interactive text-label-interactive text-primary-container">JSON, CSV, FIT</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface">Hard Deletion SLA</span>
+<span class="font-label-interactive text-label-interactive text-on-surface">&lt; 72 Hours</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+            Initiating a ledger wipe permanently destroys database rows, cloud backup nodes, and machine learning feature aggregates across all clusters.
+          </p>
+</div>
+</div>
+</details>
+<!-- Chapter 5 -->
+<details class="group rounded-xl bg-surface-container overflow-hidden transition-all duration-300">
+<summary class="flex items-center justify-between p-space-md cursor-pointer list-none select-none">
+<div class="flex items-center gap-space-sm min-w-0 pr-2">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center shrink-0 text-primary-container">
+<span class="material-symbols-outlined text-[18px]">bluetooth_searching</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">
+              5. Hardware Keys &amp; Permissions
+            </span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">
+              Bluetooth LE • GPS Elevation Logging
+            </span>
+</div>
+</div>
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant transition-transform duration-200 group-open:rotate-180">
+          expand_more
+        </span>
+</summary>
+<div class="px-space-md pb-space-md pt-1 flex flex-col gap-space-sm text-on-surface-variant font-body-md text-body-md">
+<p>
+          ATHLEO requests solely the bare operational hardware scopes mandatory for split-second precision tracking.
+        </p>
+<div class="flex flex-col gap-2">
+<div class="p-2.5 rounded-lg bg-surface-container-low flex items-center justify-between">
+<div>
+<p class="font-label-interactive text-label-interactive text-on-surface">Bluetooth LE Scanning</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Continuous telemetry link to HR monitors and power pedals.</p>
+</div>
+<span class="material-symbols-outlined text-primary-container text-[20px]">check</span>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container-low flex items-center justify-between">
+<div>
+<p class="font-label-interactive text-label-interactive text-on-surface">Background Location</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">GPS pace, elevation splits, and trail map visualizer.</p>
+</div>
+<span class="material-symbols-outlined text-primary-container text-[20px]">check</span>
+</div>
+</div>
+</div>
+</details>
+</div>
+<!-- Interactive Consent & Verification Module -->
+<div class="px-margin pt-6">
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Local Cryptographic Audit</span>
+<span class="flex items-center gap-1 text-primary-container font-label-caps text-label-caps uppercase">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+          Ledger Synced
+        </span>
+</div>
+<div class="flex items-center justify-between p-3 rounded-lg bg-surface-container">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary-container text-[20px]">key</span>
+<div class="flex flex-col">
+<span class="font-label-interactive text-label-interactive text-on-surface">Athlete Enclave Hash</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant font-mono">0x9F41...88B2-ATHLEO</span>
+</div>
+</div>
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-container-high text-on-surface font-label-caps text-label-caps uppercase hover:text-primary-container transition-colors" id="copy-hash-btn" type="button">
+          Copy
+        </button>
+</div>
+</div>
+</div>
+<!-- Action Callout & Footer Buttons -->
+<div class="px-margin pt-6 flex flex-col gap-space-sm">
+<button class="w-full h-14 rounded-xl bg-primary-container text-on-primary font-label-interactive text-label-interactive uppercase font-bold flex items-center justify-center gap-2 shadow-lg transition-transform active:scale-[0.98]" id="download-ledger-btn" type="button">
+<span class="material-symbols-outlined text-[20px]">download</span>
+<span>Download Signed Privacy Ledger (PDF)</span>
+</button>
+<button class="w-full h-12 rounded-xl bg-surface-container-high text-on-surface font-label-interactive text-label-interactive uppercase flex items-center justify-center gap-2 hover:text-primary-container transition-colors active:scale-[0.98]" id="manage-perms-btn" type="button">
+<span class="material-symbols-outlined text-[20px]">tune</span>
+<span>Manage Data Permissions</span>
+</button>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-center px-4 pt-2">
+      Need dedicated HIPAA business associate contracts or enterprise gym protocol review? Contact <span class="text-primary-container font-medium">privacy@athleo.performance</span>
+</p>
+</div>
+</div>
+<script>
+  (function () {
+    const toggleBtn = document.getElementById('toggle-all-btn');
+    const detailsElements = document.querySelectorAll('details');
+    let allOpen = false;
+
+    if (toggleBtn) {
+      toggleBtn.addEventListener('click', () => {
+        allOpen = !allOpen;
+        detailsElements.forEach(d => {
+          d.open = allOpen;
+        });
+        toggleBtn.textContent = allOpen ? 'Collapse All' : 'Expand All';
+      });
+    }
+
+    const copyBtn = document.getElementById('copy-hash-btn');
+    if (copyBtn) {
+      copyBtn.addEventListener('click', () => {
+        const originalText = copyBtn.textContent;
+        copyBtn.textContent = 'Copied';
+        setTimeout(() => {
+          copyBtn.textContent = originalText;
+        }, 1800);
+      });
+    }
+
+    const downloadBtn = document.getElementById('download-ledger-btn');
+    if (downloadBtn) {
+      downloadBtn.addEventListener('click', () => {
+        const label = downloadBtn.querySelector('span:last-child');
+        if (label) {
+          const prev = label.textContent;
+          label.textContent = 'Generating Signed Certificate...';
+          setTimeout(() => {
+            label.textContent = 'Ledger Exported (PDF)';
+            setTimeout(() => {
+              label.textContent = prev;
+            }, 2000);
+          }, 1200);
+        }
+      });
+    }
+  })();
+</script></main></body></html>
