@@ -32,7 +32,9 @@ jobs:
       - name: Install CocoaPods
         run: |
           cd ios
-          pod install
+          pod install --repo-update
+        env:
+          USE_FRAMEWORKS: static
 
       - name: Build iOS App Binary (Unsigned)
         run: |
