@@ -20,6 +20,23 @@ target 'Athleo' do
   )
 
   post_install do |installer|
+    installer.pods_project.targets.each do |target|
+      if target.name == 'glog'
+        target.build_configurations.each do |config|
+          config.build_settings['CLANG_ENABLE_MODULES'] = 'NO'
+          config.build_settings['DEFINES_MODULE'] = 'NO'
+        end
+      end
+    end
+
+    # Fix glog namespace compilation error in Swift/C++ modules (NitroModules)
+    Dir.glob("#{Pod::Config.instance.installation_root}/Pods/glog/**/*.h") do |header_path|
+      text = File.read(header_path)
+      if text.include?('#include <glog/log_severity.h>')
+        File.open(header_path, "w") { |file| file.puts text.gsub('#include <glog/log_severity.h>', '#include "log_severity.h"') }
+      end
+    end
+
     # https://github.com/facebook/react-native/blob/main/packages/react-native/scripts/react_native_pods.rb#L197-L202
     react_native_post_install(
       installer,

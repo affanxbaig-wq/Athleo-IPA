@@ -42,6 +42,8 @@ jobs:
         run: |
           cd ios
           pod install --repo-update
+          find Pods -name "logging.h" -type f -exec sed -i '' 's|#include <glog/log_severity.h>|#include "log_severity.h"|g' {} + || true
+          find Pods -name "*.h" -type f -path "*/glog/*" -exec sed -i '' 's|#include <glog/log_severity.h>|#include "log_severity.h"|g' {} + || true
         env:
           USE_FRAMEWORKS: static
 
